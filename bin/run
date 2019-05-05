@@ -10,6 +10,7 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
-puts Song.find_by_name("Hello")
+#! column index out of range (SQLite3::RangeException)
+# puts Song.find_by_name("Hello")
 
-# DB[:conn].execute("SELECT * FROM songs")
+DB[:conn].execute("SELECT * FROM songs")
